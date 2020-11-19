@@ -1,5 +1,6 @@
 html, body{
     background-color:#BCB8B1 ;
+    font-family: 'Lora', serif;
 }
 #nav-Main{
     font-family: 'Lora', serif;
@@ -24,7 +25,16 @@ html, body{
     border-radius: 10%;
     background-color: #8A817C;
 }
-.btn-primary{
-    position: relative;
-    margin-top: 16rem;
+#rollVal{
+    margin:8rem;
+    font-size:3em;
+}
+#cRolls{
+    font-family: 'Lora', serif;
+    font-weight:500;
+    padding-bottom: 2em;
+    margin-top: 3em;
+}
+.carousel-inner{
+    margin: auto;
 }
