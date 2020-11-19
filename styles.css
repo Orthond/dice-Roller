@@ -1,0 +1,30 @@
+html, body{
+    background-color:#BCB8B1 ;
+}
+#nav-Main{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    align-items: center;
+    display: flex;
+    color: #FFCDB2;
+
+}
+#test{
+    background-color: #463f3a;
+}
+#rollContain{
+    background-color: #BCB8B1;
+    padding: 5em;
+    text-align: center;
+}
+#cardStyle{
+    height: 28rem;
+    width: 30rem;
+    border-radius: 10%;
+    background-color: #8A817C;
+}
+.btn-primary{
+    position: relative;
+    margin-top: 16rem;
+}
