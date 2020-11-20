@@ -24,10 +24,14 @@ function roller(max){
 }
 document.querySelector("#testBtn").onclick = function() {roller(diceVal(dSelect))};
 // selects our roll button and calls roller to roll a dice based on the current dice value
-document.querySelector("#newBtn").onclick = function() {
-    dSelect++
+document.querySelector("#nextBtn").onclick = function() {
+    dSelect++;
     document.querySelector("#testBtn").textContent = `Roll ${diceKey(dSelect)}`;
 }
-// increments the key/value selector by 1 and updates the roll buttons text to accuratley show its current dice key 
+document.querySelector("#prevBtn").onclick = function() {
+    dSelect--;
+    document.querySelector("#testBtn").textContent = `Roll ${diceKey(dSelect)}`;
+}
+// increments/Decrements the key/value selector by 1 and updates the roll buttons text to accuratley show its current dice key 
 document.querySelector("#testBtn").textContent = `Roll ${diceKey(dSelect)}`;
 // failsafe for always displaying the current Dice via the dice key on startup
