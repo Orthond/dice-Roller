@@ -26,8 +26,10 @@ html, body{
     background-color: #8A817C;
 }
 #rollVal{
-    margin:8rem;
-    font-size:3em;
+    margin:10rem;
+    font-size:2em;
+    font-family: 'lora', serif;
+    font-weight:500;
 }
 #cRolls{
     font-family: 'Lora', serif;
@@ -37,4 +39,7 @@ html, body{
 }
 .carousel-inner{
     margin: auto;
+}
+button{
+    cursor: pointer;
 }

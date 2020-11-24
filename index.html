@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="dependencies/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dependencies/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
-</head>
-<body>   
-  <nav class="navbar" id="test">
-    <div class='container'>
-      <a class="navbar-brand" href="#" id="nav-Main">
-        <img src="Images/d20Logo.png" id="nav-Main" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
-        Roller
-      </a>
-    </div>
-  </nav>
-  <div class="container-fluid" id="rollContain"> 
-    <div class="card d-flex mx-auto" id="cardStyle">
-      <div class="card-body">
-        <h3 class="card-title">Roller</h3>
-        <p class="card-text" id="rollVal">Value</p>
-        <button type="button" class="btn btn-danger" id="prevBtn">Decrease</button> 
-        <button type="button" class="btn btn-primary" id="testBtn">Roll D6</button>
-        <button type="button" class="btn btn-danger" id="nextBtn">Increase</button> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="test">
+      <div class="container">
+        <a class="navbar-brand" href="#" id="nav-Main">
+          <img
+            src="Images/d20Logo.png"
+            id="nav-Main"
+            width="50"
+            height="50"
+            class="d-inline-block align-top"
+            alt=""
+            loading="lazy"
+          />
+          Roller
+        </a>
       </div>
-    </div>    
-  </div>
-  <script src="app.js"></script>
-  <script src="dependencies/js/jquery.min.js"></script>
-  <script src="dependencies/js/popper.min.js"></script>
-  <script src="dependencies/js/bootstrap.min.js"></script>
-</body>
+    </nav>
+    <div class="container-fluid" id="rollContain">
+      <div class="card d-flex mx-auto" id="cardStyle">
+        <div class="card-body">
+          <p class="card-text" id="rollVal">Roll</p>
+          <button type="button" class="btn btn-danger" id="prevBtn">
+            Prev Dice
+          </button>
+          <button type="button" class="btn btn-primary" id="rollBtn"></button>
+          <button type="button" class="btn btn-danger" id="nextBtn">
+            Next Dice
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="dependencies/js/jquery.min.js"></script>
+    <script src="dependencies/js/popper.min.js"></script>
+    <script src="dependencies/js/bootstrap.min.js"></script>
+  </body>
 </html>
