@@ -1,45 +1,54 @@
-html, body{
-    background-color:#BCB8B1 ;
-    font-family: 'Lora', serif;
+html,
+body {
+  background-color: #bcb8b1;
+  font-family: "Lora", serif;
 }
-#nav-Main{
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    font-size: 2.5rem;
-    align-items: center;
-    display: flex;
-    color: #FFCDB2;
-
+#nav-Main {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  align-items: center;
+  display: flex;
+  color: #ffcdb2;
 }
-#test{
-    background-color: #463f3a;
+#test {
+  background-color: #463f3a;
 }
-#rollContain{
-    background-color: #BCB8B1;
-    padding: 5em;
-    text-align: center;
+#rollContain {
+  background-color: #bcb8b1;
+  padding: 5em;
+  text-align: center;
 }
-#cardStyle{
-    height: 28rem;
-    width: 30rem;
-    border-radius: 10%;
-    background-color: #8A817C;
+#cardStyle {
+  height: 28rem;
+  width: 30rem;
+  border-radius: 10%;
+  background-color: #8a817c;
 }
-#rollVal{
-    margin:10rem;
-    font-size:2em;
-    font-family: 'lora', serif;
-    font-weight:500;
+#rollVal {
+  margin: 10rem;
+  font-size: 2em;
+  font-family: "lora", serif;
+  font-weight: 500;
 }
-#cRolls{
-    font-family: 'Lora', serif;
-    font-weight:500;
-    padding-bottom: 2em;
-    margin-top: 3em;
+#cRolls {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  padding-bottom: 2em;
+  margin-top: 3em;
 }
-.carousel-inner{
-    margin: auto;
+.carousel-inner {
+  margin: auto;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
+}
+#bContain button {
+  margin: 0 0.4em;
+}
+#dTotal {
+  width: 8%;
+  border: 0.1em solid black;
+  border-radius: 20%;
+  text-align: center;
 }

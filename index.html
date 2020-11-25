@@ -32,15 +32,20 @@
     </nav>
     <div class="container-fluid" id="rollContain">
       <div class="card d-flex mx-auto" id="cardStyle">
-        <div class="card-body">
-          <p class="card-text" id="rollVal">Roll</p>
-          <button type="button" class="btn btn-danger" id="prevBtn">
-            Prev Dice
-          </button>
-          <button type="button" class="btn btn-primary" id="rollBtn"></button>
-          <button type="button" class="btn btn-danger" id="nextBtn">
-            Next Dice
-          </button>
+        <div class="card-body justify-content-center">
+          <h2 class="card-text" id="rollVal">Roll</h2>
+          <div class="d-flex justify-content-center" id="bContain">
+            <button type="button" class="btn btn-danger" id="prevBtn">
+              Prev Dice
+            </button>
+            <button type="button" class="btn btn-primary" id="rollBtn"></button>
+            <button type="button" class="btn btn-danger" id="nextBtn">
+              Next Dice
+            </button>
+            <button type="button" class="btn btn-danger" id="dPlus">+</button>
+            <input type="text" id="dTotal" placeholder="1" />
+            <button type="button" class="btn btn-danger" id="dMinus">-</button>
+          </div>
         </div>
       </div>
     </div>
