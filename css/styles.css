@@ -11,7 +11,7 @@ body {
   display: flex;
   color: #ffcdb2;
 }
-#test {
+#nav {
   background-color: #463f3a;
 }
 #rollContain {
@@ -22,23 +22,21 @@ body {
 #cardStyle {
   height: 28rem;
   width: 30rem;
-  border-radius: 10%;
-  background-color: #8a817c;
+  border-radius: 10% 0 0 10%;
+  background-color: #292b2c;
 }
 #rollVal {
   margin: 10rem;
   font-size: 2em;
   font-family: "lora", serif;
   font-weight: 500;
+  color: white;
 }
 #cRolls {
   font-family: "Lora", serif;
   font-weight: 500;
   padding-bottom: 2em;
   margin-top: 3em;
-}
-.carousel-inner {
-  margin: auto;
 }
 button {
   cursor: pointer;
@@ -51,4 +49,34 @@ button {
   border: 0.1em solid black;
   border-radius: 20%;
   text-align: center;
+  font-family: "Lora", serif;
+  font-weight: bold;
+}
+#dTotal::placeholder,
+#dTotal::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: black;
+}
+#hCard {
+  border-radius: 0 1em 1em 0;
+  padding: 0;
+  background-color: #292b2c;
+}
+#hTitle {
+  color: white;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+tr {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.card-text {
+  animation: fadeIn 0.3s ease-in-out;
 }

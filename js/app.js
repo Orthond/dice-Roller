@@ -1,4 +1,4 @@
-const dice = {
+const allDice = {
   d4: 4,
   d6: 6,
   d8: 8,
@@ -8,29 +8,42 @@ const dice = {
 };
 // initialize the dice selector, we will use this to index both our dice objects keys and values
 let dSelect = 0;
+// dAmount is the value of the current roll within the history tab
 let dAmount = 1;
+// rollNum is the number for roll history, roll no. ,1 roll no. 2 etc.
+let rollNum = 0;
 // diceVal and diceKey are object selector functions for dice
 function diceVal(x) {
-  let diceType = Object.values(dice)[x];
+  let diceType = Object.values(allDice)[x];
   return diceType;
 }
 
 function diceKey(y) {
-  let diceType = Object.keys(dice)[y];
+  let diceType = Object.keys(allDice)[y];
   return diceType;
 }
 // Roll Math
 function roller(max) {
+  let rollVal = document.querySelector("#rollVal");
   let tester = Math.floor(Math.random() * max + 1) * dAmount;
-  let rollVal = (document.querySelector("#rollVal").textContent = `${tester}`);
+  rollVal.classList.remove("card-text");
+  rollVal.textContent = `${tester}`;
+  void rollVal.offsetWidth;
+  rollVal.classList.add("card-text");
+  // remove class and add same class back aswell as triggering reflow to re-animate on function call and change text to roll value
+  hVal = tester;
+  //updates the History Value so we can append the value to our roll history
 }
 const rollBtn = document.querySelector("#rollBtn");
 const nextBtn = document.querySelector("#nextBtn");
 const prevBtn = document.querySelector("#prevBtn");
 //selects our roll button and calls roller to roll a dice
+
 rollBtn.onclick = function () {
+  rollNum++;
   udValue(dTotal.value);
   roller(diceVal(dSelect));
+  rollHistory(rollNum, diceKey(dSelect), dAmount, hVal);
 };
 
 nextBtn.onclick = function () {
@@ -50,7 +63,7 @@ function Select(x) {
   } else {
     dSelect--;
   }
-  if (dSelect >= Object.keys(dice).length) {
+  if (dSelect >= Object.keys(allDice).length) {
     dSelect--;
   }
   if (dSelect <= -1) {
@@ -74,8 +87,10 @@ dMinus.onclick = function () {
 function Amount(x) {
   if (x == 1) {
     dAmount++;
+    dTotal.value = "";
   } else {
     dAmount--;
+    dTotal.value = "";
   }
   if (dAmount >= 21) {
     dAmount--;
@@ -94,4 +109,29 @@ function udValue(x) {
     dAmount = dAmount;
   }
   console.log(x);
+}
+function rollHistory(num, dice, amount, total) {
+  let hTab = document.querySelector("#hTab");
+  let TR = document.createElement("tr");
+  let TH = document.createElement("th");
+  let number = document.createTextNode(num);
+  let TD1 = document.createElement("td");
+  let tDice = document.createTextNode(dice);
+  let TD2 = document.createElement("td");
+  let tAmount = document.createTextNode(amount);
+  let TD3 = document.createElement("td");
+  let tTotal = document.createTextNode(total);
+  hTab.appendChild(TR);
+  TH.appendChild(number);
+  TR.appendChild(TH);
+  TD1.appendChild(tDice);
+  TR.appendChild(TD1);
+  TD2.appendChild(tAmount);
+  TR.appendChild(TD2);
+  TD3.appendChild(tTotal);
+  TR.appendChild(TD3);
+  let testy = hTab.childNodes.item(0);
+  if (rollNum > 6) {
+    testy.remove();
+  }
 }
