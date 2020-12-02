@@ -15,16 +15,14 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <nav class="navbar" id="nav">
-      <div class="container">
+    <nav class="navbar navbar-expand-md" id="nav">
         <a class="navbar-brand" href="#" id="nav-Main">
           <img
             src="img/d20Logo.png"
             id="nav-Main"
-            width="50"
-            height="50"
-            class="d-inline-block align-top"
+            class="d-inline-flex align-top"
             alt=""
             loading="lazy"
           />
@@ -33,10 +31,10 @@
       </div>
     </nav>
     <div class="container-fluid" id="rollContain">
-      <div class="d-inline-flex flex-row justify-content-center">
+      <div class="d-inline-flex">
         <div class="card" id="cardStyle">
           <div class="card-body">
-            <h2 class="card-text" id="rollVal">Roll</h2>
+            <div class="card-text" id="rollVal">Roll</div>
             <div class="d-flex justify-content-center" id="bContain">
               <button type="button" class="btn btn-dark" id="prevBtn">
                 Prev Dice
@@ -54,7 +52,7 @@
         <div class="card row no-gutters" id="hCard">
           <div class="card-body col">
             <h5 class="card-title" id="hTitle">History</h5>
-            <table class="table table-dark" id="hTab ">
+            <table class="table table-dark" id="hTab">
               <thead>
                 <tr>
                   <th scope="col">Roll #</th>

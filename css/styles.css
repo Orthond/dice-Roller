@@ -2,55 +2,72 @@ html,
 body {
   background-color: #bcb8b1;
   font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
 }
 #nav-Main {
   font-family: "Lora", serif;
   font-weight: 400;
   font-size: 2.5rem;
-  align-items: center;
-  display: flex;
   color: #ffcdb2;
+  width: 5rem;
+  height: 5rem;
 }
 #nav {
   background-color: #463f3a;
 }
 #rollContain {
   background-color: #bcb8b1;
-  padding: 5em;
   text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 #cardStyle {
   height: 28rem;
-  width: 30rem;
+  width: 32rem;
   border-radius: 10% 0 0 10%;
   background-color: #292b2c;
+  display: flex;
 }
 #rollVal {
-  margin: 10rem;
   font-size: 2em;
   font-family: "lora", serif;
   font-weight: 500;
   color: white;
+  margin-top: 10rem;
 }
-#cRolls {
-  font-family: "Lora", serif;
-  font-weight: 500;
-  padding-bottom: 2em;
-  margin-top: 3em;
-}
-button {
-  cursor: pointer;
-}
+
 #bContain button {
   margin: 0 0.4em;
 }
+#bContain {
+  justify-content: center;
+  margin-top: 10rem;
+}
 #dTotal {
-  width: 8%;
+  width: 2.3em;
+  height: 2.3em;
   border: 0.1em solid black;
   border-radius: 20%;
   text-align: center;
   font-family: "Lora", serif;
   font-weight: bold;
+}
+#dPlus,
+#dMinus {
+  min-width: 2.3rem;
+  min-height: 2.3rem;
+}
+#prevBtn,
+#nextBtn,
+#rollBtn {
+  min-width: 6em;
+  min-height: 2.3rem;
 }
 #dTotal::placeholder,
 #dTotal::-webkit-input-placeholder {
@@ -62,6 +79,20 @@ button {
   border-radius: 0 1em 1em 0;
   padding: 0;
   background-color: #292b2c;
+  height: 28em;
+  max-height: 28em;
+  overflow: auto;
+}
+#hCard::-webkit-scrollbar {
+  width: 10px;
+}
+#hCard::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0 1.2em 1.2em 0;
+}
+#hCard::-webkit-scrollbar-thumb {
+  background: #0d1317;
+  border-radius: 0 1.2em 1.2em 0;
 }
 #hTitle {
   color: white;

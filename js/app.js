@@ -130,8 +130,5 @@ function rollHistory(num, dice, amount, total) {
   TR.appendChild(TD2);
   TD3.appendChild(tTotal);
   TR.appendChild(TD3);
-  let testy = hTab.childNodes.item(0);
-  if (rollNum > 6) {
-    testy.remove();
-  }
 }
+function resetRoller() {}
