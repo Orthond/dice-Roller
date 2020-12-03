@@ -17,25 +17,15 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md" id="nav">
-        <a class="navbar-brand" href="#" id="nav-Main">
-          <img
-            src="img/d20Logo.png"
-            id="nav-Main"
-            class="d-inline-flex align-top"
-            alt=""
-            loading="lazy"
-          />
-          Roller
-        </a>
-      </div>
+    <nav class="navbar" id="nav">
+      <a class="navbar-brand" href="#" id="nav-Main"> Roller </a>
     </nav>
-    <div class="container-fluid" id="rollContain">
-      <div class="d-inline-flex">
+    <div class="row no-gutters" id="rollContain">
+      <div class="col">
         <div class="card" id="cardStyle">
-          <div class="card-body">
+          <div class="card-body" id="cardBody">
             <div class="card-text" id="rollVal">Roll</div>
-            <div class="d-flex justify-content-center" id="bContain">
+            <div>
               <button type="button" class="btn btn-dark" id="prevBtn">
                 Prev Dice
               </button>
@@ -43,9 +33,14 @@
               <button type="button" class="btn btn-dark" id="nextBtn">
                 Next Dice
               </button>
+            </div>
+            <div id="bContain">
               <button type="button" class="btn btn-dark" id="dPlus">+</button>
               <input type="text" id="dTotal" placeholder="1" />
               <button type="button" class="btn btn-dark" id="dMinus">-</button>
+              <button type="button" class="btn btn-dark" id="resetBtn">
+                Reset
+              </button>
             </div>
           </div>
         </div>
@@ -54,7 +49,7 @@
             <h5 class="card-title" id="hTitle">History</h5>
             <table class="table table-dark" id="hTab">
               <thead>
-                <tr>
+                <tr id="tHead">
                   <th scope="col">Roll #</th>
                   <th scope="col">Dice Type</th>
                   <th scope="col">Total Dice</th>
