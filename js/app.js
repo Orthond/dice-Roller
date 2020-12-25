@@ -1,4 +1,5 @@
 const allDice = {
+  d2: 2,
   d4: 4,
   d6: 6,
   d8: 8,
